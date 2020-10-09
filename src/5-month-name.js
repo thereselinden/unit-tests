@@ -1,8 +1,27 @@
 const months = [
-  'January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'
+  'January', 
+  'February', 
+  'March', 
+  'April', 
+  'May', 
+  'June',
+  'July', 
+  'August', 
+  'September', 
+  'October', 
+  'November', 
+  'December'
 ]
+/*
+export const monthName = (monthNumber) => {
+  if (monthNumber < 1 || monthNumber > 12) {
+    return null
+  } else return months[monthNumber - 1]
+}
+*/
 
 export const monthName = (monthNumber) => {
-  return months[monthNumber]
+  if (monthNumber <= 12 && monthNumber > 0) {
+    return months[monthNumber - 1]
+  } return null
 }
